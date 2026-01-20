@@ -8,7 +8,7 @@ export interface Patient {
   name?: HumanName[];
   gender?: string;
   birthDate?: string;
-  adress?: {
+  address?: {
     city?: string;
     country?: string;
   }[];
