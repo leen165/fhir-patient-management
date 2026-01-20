@@ -33,8 +33,10 @@ const PatientDetails = () => {
         <span>Birthdate:</span> {patient.birthDate ?? "Notavailable"}
       </p>
       <p>
-        <span>City:</span> {patient.address?.[0]?.city ?? "Not available"}
-        {patient.address?.[0]?.country ?? "Not available"}
+        <span>City:</span>{" "}
+        {patient.address?.[0]?.city ??
+          patient.address?.[0]?.country ??
+          "Not available"}
       </p>
     </div>
   );
