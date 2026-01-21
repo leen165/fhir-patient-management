@@ -25,11 +25,6 @@ const PatientDetails = () => {
           {patient.name?.[0]?.family}
         </p>
         <p>
-          <span className="label">Name:</span>{" "}
-          {patient.name?.[0]?.given?.join(" ")}
-          {patient.name?.[0]?.family}
-        </p>
-        <p>
           <span className="label">Gender:</span>{" "}
           {patient.gender ?? "Not available"}
         </p>
